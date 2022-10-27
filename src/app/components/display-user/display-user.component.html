@@ -1,0 +1,33 @@
+  <!--::chefs_part start::-->
+  <section class="chefs_part blog_item_section section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5">
+                <div class="section_tittle">
+              
+                    <h2>Display User</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div class="single_blog_item">
+                    <div class="single_blog_img">
+                        <img src="assets/img/team/chefs_1.png" alt="">
+                    </div>
+                    <div class="single_blog_text text-center">
+                        <h3>{{user.firstName}}  {{user.lastName}}</h3>
+                        <h3>{{user.email}}</h3>
+                        <p *ngIf="user.role == 'chef'">{{user.speciality}}</p>
+                        <p *ngIf="user.role == 'chef'">{{user.experience}} years</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+         
+           
+        </div>
+    </div>
+</section>
+<!--::chefs_part end::-->

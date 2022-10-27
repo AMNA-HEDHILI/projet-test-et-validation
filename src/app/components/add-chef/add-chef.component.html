@@ -1,0 +1,60 @@
+  <!--::regervation_part start::-->
+  <section class="regervation_part section_padding" style="margin-top: 100px">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5">
+                <div class="section_tittle">
+                    
+                    <h2>Add Chef</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="regervation_part_iner">
+                    <form #addChefForm="ngForm" (ngSubmit)="addChef()">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control"  placeholder="First Name *" [(ngModel)]="user.firstName" [ngModelOptions]="{standalone : true}">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Last Name *" [(ngModel)]="user.lastName" [ngModelOptions]="{standalone : true}">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" 
+                                    placeholder="Email address *" [(ngModel)]="user.email" [ngModelOptions]="{standalone : true}">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="password" class="form-control" 
+                                    placeholder="Password *" [(ngModel)]="user.password" [ngModelOptions]="{standalone : true}">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="tel" class="form-control" 
+                                    placeholder="Tel *" [(ngModel)]="user.tel" [ngModelOptions]="{standalone : true}">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" 
+                                    placeholder="Speciality *" [(ngModel)]="user.speciality" [ngModelOptions]="{standalone : true}">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="number" class="form-control" 
+                                    placeholder="Experience *" [(ngModel)]="user.experience" [ngModelOptions]="{standalone : true}">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="date" class="form-control" 
+                                     [(ngModel)]="user.dateOfBirth" [ngModelOptions]="{standalone : true}">
+                            </div>
+                        </div>
+
+
+                        <div class="regerv_btn">
+                            <button class="btn_4">Add</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--::regervation_part end::-->
